@@ -1,0 +1,248 @@
+html {
+    scroll-padding-top: 120px;
+}
+
+body {
+    text-transform: lowercase;
+    font-family: 'Manjari'; sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    background-color: #a1d4c7;
+    z-index: 1;
+}
+
+header img {
+    padding: 15px 30px 10px 30px;
+    width: 100px;
+    height: 100px;
+}
+
+header p {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.7em;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+}
+
+nav a {
+    padding-left: 5%;
+    color: black;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+#welcome-section {
+    background-color: #c0ebe0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    min-height: calc(100vh - 150px);
+    text-align: center;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+#welcome-section p {
+    font-size: 2em;
+}
+
+#projects {
+    background-color: #d4faf0;
+    padding: 20px;
+    text-align: center;
+}
+
+.examples {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-gap: 10%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+}
+
+.exlink {
+    color: black;
+    transition: color 0.3s;
+    text-decoration: none;
+    background-color: #a1d4c7;
+    border: 8px solid #a1d4c7;
+    margin-top: 30px;
+    font-size: 1.5em;
+}
+
+.examples a:hover {
+    color: white;
+}
+
+.examples img {
+    width: 100%;
+    border: 3px solid black;
+    transition: 0.3s;
+}
+
+.examples img:hover {
+    opacity: 0.7;
+}
+
+#profile-link {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+
+.exlink:hover {
+    color: white;
+}
+
+#contact {
+    background-color:#e6fff8;
+    padding: 20px;
+    text-align: center;
+}
+
+.contactform {
+    padding: 15px;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+form {
+    padding-bottom: 20px;
+}
+
+input {
+    font-family: 'Manjari', sans-serif;
+    font-size: 1em;
+    border: 1px solid gray;
+    width: 30%;
+    padding: 8px;
+}
+
+textarea {
+    font-family: 'Manjari', sans-serif;
+    width: 30%;
+    padding: 8px;
+    text-transform: lowercase;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #a1d4c7;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+button:hover {
+    color: white;
+}
+
+footer {
+    background-color: #f0fffb;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    header img {
+        padding: 15px 15px 15px 15px;
+        width: 70px;
+        height: 70px;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    #welcome-section p {
+        font-size: 1em;
+    }
+
+    .examples {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #profile-link {
+        width: 75%;
+        font-size: 1.2em;
+    }
+
+    .examples img {
+        margin-top: 30px;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    textarea {
+        width: 80%;
+    }
+
+    #contact h3 {
+        line-height: 2em;
+    }
+
+    #welcome-section {
+        min-height: 50vh;
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
